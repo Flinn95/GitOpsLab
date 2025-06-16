@@ -1,0 +1,14 @@
+manifestVersion: 1.0
+projects:
+  - name: metric-event
+    path: miproyecto
+
+environmentGroups:
+  - name: development
+    environments:
+      - name: development-environment
+        url:
+          value: "https://fgj6570d.dev.dynatracelabs.com/"
+        auth:
+          token:
+            name: "devToken"
