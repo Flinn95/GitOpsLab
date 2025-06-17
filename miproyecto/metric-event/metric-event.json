@@ -1,30 +1,36 @@
 {
-  "enabled": true,
-  "summary": "Test",
-  "eventTemplate": {
-    "title": "Se rebaso el uso del CPU",
-    "metadata": [],
-    "eventType": "CUSTOM_ALERT",
-    "davisMerge": true,
-    "description": "The {metricname} value was {alert_condition} normal behavior."
-  },
-  "modelProperties": {
-    "type": "STATIC_THRESHOLD",
-    "samples": 5,
-    "threshold": 91,
-    "alertOnNoData": false,
-    "alertCondition": "ABOVE",
-    "violatingSamples": 3,
-    "dealertingSamples": 5
-  },
-  "queryDefinition": {
-    "type": "METRIC_KEY",
-    "metricKey": "builtin:host.cpu.usage",
-    "aggregation": "AVG",
-    "entityFilter": {
-      "conditions": [],
-      "dimensionKey": "dt.entity.host"
+    "enabled": true,
+    "summary": "UsoDeMemoriaWebApp",
+    "eventTemplate": {
+        "title": "Uso de memoria del Pod Rebasado",
+        "metadata": [],
+        "eventType": "RESOURCE",
+        "davisMerge": true,
+        "description": "The {metricname} value was {alert_condition} normal behavior."
     },
-    "dimensionFilter": []
-  }
+    "modelProperties": {
+        "type": "STATIC_THRESHOLD",
+        "samples": 5,
+        "threshold": 510,
+        "alertOnNoData": false,
+        "alertCondition": "ABOVE",
+        "violatingSamples": 3,
+        "dealertingSamples": 5
+    },
+    "queryDefinition": {
+        "type": "METRIC_KEY",
+        "metricKey": "builtin:kubernetes.workload.memory_working_set",
+        "aggregation": "AVG",
+        "entityFilter": {
+            "conditions": [
+                {
+                    "type": "NAME",
+                    "value": "web-app-deployment",
+                    "operator": "EQUALS"
+                }
+            ],
+            "dimensionKey": "dt.entity.cloud_application"
+        },
+        "dimensionFilter": []
+    }
 }
