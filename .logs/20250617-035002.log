@@ -1,0 +1,6 @@
+2025-06-17T03:50:02Z	info	Monaco version 2.23.1
+2025-06-17T03:50:02Z	debug	Default soft memory limit set: 2.1 GB
+2025-06-17T03:50:02Z	info	Loading manifest "/home/remote_user/GitOpsLab/manifest.yaml". Restrictions: groups=[], environments=[]
+2025-06-17T03:50:02Z	error	/home/remote_user/GitOpsLab/manifest.yaml:development:development-environment: failed to parse auth section: failed to parse token: environment-variable "devToken" was not found
+2025-06-17T03:50:02Z	error	Error: error while loading manifest
+2025-06-17T03:50:02Z	error	error logs written to .logs/20250617-035002-errors.log

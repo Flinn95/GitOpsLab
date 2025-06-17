@@ -1,0 +1,28 @@
+2025-06-17T03:41:01Z	info	Monaco version 2.23.1
+2025-06-17T03:41:01Z	debug	Default soft memory limit set: 2.1 GB
+2025-06-17T03:41:01Z	info	Loading manifest "/home/remote_user/GitOpsLab/manifest.yaml". Restrictions: groups=[], environments=[]
+2025-06-17T03:41:01Z	debug	Key User Action Web wait seconds: 1, from 'MONACO_KUA_WEB_WAIT_SECONDS' environment variable is NOT set, using default value
+2025-06-17T03:41:01Z	debug	Loading project `metric-event` (miproyecto)...
+2025-06-17T03:41:01Z	debug	Loading configuration file miproyecto/metric-event/metric-event.yaml
+2025-06-17T03:41:01Z	debug	Loading template for miproyecto/metric-event/metric-event.json
+2025-06-17T03:41:01Z	info	Projects to be deployed (1):
+2025-06-17T03:41:01Z	info	  - metric-event
+2025-06-17T03:41:01Z	info	Environments to deploy to (1):
+2025-06-17T03:41:01Z	info	  - development-environment
+2025-06-17T03:41:01Z	debug	Concurrent Request Limit: 5, 'MONACO_CONCURRENT_REQUESTS' environment variable is NOT set, using default value
+2025-06-17T03:41:01Z	debug	Concurrent Deployments Limit: 0, 'MONACO_CONCURRENT_DEPLOYMENTS' environment variable is NOT set, using default value
+2025-06-17T03:41:01Z	debug	Creating dependency graph for development-environment
+2025-06-17T03:41:01Z	debug	Added 1 config nodes to graph
+2025-06-17T03:41:01Z	debug	Adding edges between dependent config nodes...
+2025-06-17T03:41:01Z	debug	Downloading all settings for schema builtin:anomaly-detection.metric-events
+2025-06-17T03:41:01Z	debug	Cached settings values for schema builtin:anomaly-detection.metric-events
+2025-06-17T03:41:01Z	info	Deploying configurations to environment "development-environment"...
+2025-06-17T03:41:01Z	info	Deploying 1 independent configuration sets in parallel...
+2025-06-17T03:41:01Z	info	[coord=metric-event:builtin:anomaly-detection.metric-events:7a52448b-1879-3b1c-aae3-5d82db2ca42f][gid=0]	Deploying config
+2025-06-17T03:41:01Z	debug	[coord=metric-event:builtin:anomaly-detection.metric-events:7a52448b-1879-3b1c-aae3-5d82db2ca42f][gid=0]	Using cached settings for schema builtin:anomaly-detection.metric-events
+2025-06-17T03:41:01Z	debug	[coord=metric-event:builtin:anomaly-detection.metric-events:7a52448b-1879-3b1c-aae3-5d82db2ca42f][gid=0]	Using cached settings for schema builtin:anomaly-detection.metric-events
+2025-06-17T03:41:01Z	debug	[coord=metric-event:builtin:anomaly-detection.metric-events:7a52448b-1879-3b1c-aae3-5d82db2ca42f][gid=0]	Created/Updated object 7a52448b-1879-3b1c-aae3-5d82db2ca42f (schemaID: builtin:anomaly-detection.metric-events, Scope: environment, insertAfter: <nil>) with externalId monaco:bWV0cmljLWV2ZW50JGJ1aWx0aW46YW5vbWFseS1kZXRlY3Rpb24ubWV0cmljLWV2ZW50cyQ3YTUyNDQ4Yi0xODc5LTNiMWMtYWFlMy01ZDgyZGIyY2E0MmY=
+2025-06-17T03:41:01Z	debug	[coord=metric-event:builtin:anomaly-detection.metric-events:7a52448b-1879-3b1c-aae3-5d82db2ca42f][gid=0]	failed to extract name for Settings 2.0 object "vu9U3hXa3q0AAAABACdidWlsdGluOmFub21hbHktZGV0ZWN0aW9uLm1ldHJpYy1ldmVudHMABnRlbmFudAAGdGVuYW50ACQ3NzNkZDI4Yi01YTRjLTNiZTQtYTg2NC05OWJkNjU0NWYzNTG-71TeFdrerQ" - ID will be used
+2025-06-17T03:41:01Z	info	[coord=metric-event:builtin:anomaly-detection.metric-events:7a52448b-1879-3b1c-aae3-5d82db2ca42f][gid=0]	Deployment successful
+2025-06-17T03:41:01Z	info	Deployment successful for environment "development-environment"
+2025-06-17T03:41:01Z	info	Deployment finished without errors
