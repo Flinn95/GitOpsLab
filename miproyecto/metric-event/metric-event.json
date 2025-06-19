@@ -1,21 +1,21 @@
 {
     "enabled": true,
-    "summary": "UsoDeMemoriaWebApp",
+    "summary": "UsoDeMemoriaWebAppUno",
     "eventTemplate": {
-        "title": "Uso de memoria del Pod Rebasado",
+        "title": "Uso de memoria optimo de la web app uno rebasado",
         "metadata": [],
         "eventType": "RESOURCE",
-        "davisMerge": true,
+        "davisMerge": false,
         "description": "The {metricname} value was {alert_condition} normal behavior."
     },
     "modelProperties": {
         "type": "STATIC_THRESHOLD",
-        "samples": 5,
-        "threshold": 461422201.14283687,
+        "samples": 3,
+        "threshold": 485415534.282468,
         "alertOnNoData": false,
         "alertCondition": "ABOVE",
-        "violatingSamples": 3,
-        "dealertingSamples": 5
+        "violatingSamples": 1,
+        "dealertingSamples": 3
     },
     "queryDefinition": {
         "type": "METRIC_KEY",
@@ -25,7 +25,7 @@
             "conditions": [
                 {
                     "type": "NAME",
-                    "value": "web-app-deployment",
+                    "value": "webapp-uno",
                     "operator": "EQUALS"
                 }
             ],
