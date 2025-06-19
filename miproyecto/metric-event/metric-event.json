@@ -1,1 +1,36 @@
-1.- Hola mundo :D
+{
+    "enabled": true,
+    "summary": "UsoDeMemoriaWebAppOcho",
+    "eventTemplate": {
+        "title": "Uso de memoria optimo de la web app ocho rebasado",
+        "metadata": [],
+        "eventType": "RESOURCE",
+        "davisMerge": false,
+        "description": "The {metricname} value was {alert_condition} normal behavior."
+    },
+    "modelProperties": {
+        "type": "STATIC_THRESHOLD",
+        "samples": 3,
+        "threshold": 541272724.316997,
+        "alertOnNoData": false,
+        "alertCondition": "ABOVE",
+        "violatingSamples": 1,
+        "dealertingSamples": 3
+    },
+    "queryDefinition": {
+        "type": "METRIC_KEY",
+        "metricKey": "builtin:kubernetes.workload.memory_working_set",
+        "aggregation": "AVG",
+        "entityFilter": {
+            "conditions": [
+                {
+                    "type": "NAME",
+                    "value": "webapp-ocho",
+                    "operator": "EQUALS"
+                }
+            ],
+            "dimensionKey": "dt.entity.cloud_application"
+        },
+        "dimensionFilter": []
+    }
+}
