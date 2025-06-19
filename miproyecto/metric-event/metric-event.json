@@ -1,1 +1,36 @@
-Primer commit
+{
+    "enabled": true,
+    "summary": "UsoDeMemoriaWebAppNueve",
+    "eventTemplate": {
+        "title": "Uso de memoria optimo de la web app nueve rebasado",
+        "metadata": [],
+        "eventType": "RESOURCE",
+        "davisMerge": false,
+        "description": "The {metricname} value was {alert_condition} normal behavior."
+    },
+    "modelProperties": {
+        "type": "STATIC_THRESHOLD",
+        "samples": 3,
+        "threshold": 457509634.12022763,
+        "alertOnNoData": false,
+        "alertCondition": "ABOVE",
+        "violatingSamples": 1,
+        "dealertingSamples": 3
+    },
+    "queryDefinition": {
+        "type": "METRIC_KEY",
+        "metricKey": "builtin:kubernetes.workload.memory_working_set",
+        "aggregation": "AVG",
+        "entityFilter": {
+            "conditions": [
+                {
+                    "type": "NAME",
+                    "value": "webapp-nueve",
+                    "operator": "EQUALS"
+                }
+            ],
+            "dimensionKey": "dt.entity.cloud_application"
+        },
+        "dimensionFilter": []
+    }
+}
