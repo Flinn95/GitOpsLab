@@ -1,8 +1,8 @@
 {
     "enabled": true,
-    "summary": "UsoDeMemoriaWebAppSiete",
+    "summary": "UsoDeMemoriaWebAppCinco",
     "eventTemplate": {
-        "title": "Uso de memoria optimo de la web app siete rebasado",
+        "title": "Uso de memoria optimo de la web app cinco rebasado",
         "metadata": [],
         "eventType": "RESOURCE",
         "davisMerge": false,
@@ -11,7 +11,7 @@
     "modelProperties": {
         "type": "STATIC_THRESHOLD",
         "samples": 3,
-        "threshold": 507766982.68506575,
+        "threshold": 508567503.8127907,
         "alertOnNoData": false,
         "alertCondition": "ABOVE",
         "violatingSamples": 1,
@@ -25,7 +25,7 @@
             "conditions": [
                 {
                     "type": "NAME",
-                    "value": "webapp-siete",
+                    "value": "webapp-cinco",
                     "operator": "EQUALS"
                 }
             ],
