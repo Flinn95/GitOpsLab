@@ -11,7 +11,7 @@
     "modelProperties": {
         "type": "STATIC_THRESHOLD",
         "samples": 3,
-        "threshold": 541272724.316997,
+        "threshold": 480739503.8910357,
         "alertOnNoData": false,
         "alertCondition": "ABOVE",
         "violatingSamples": 1,
