@@ -1,12 +1,12 @@
 configs:
-- id: 36117b86-013a-3981-b3d7-21f9ee05d89c
+- id: f3a3c809-2c2f-305a-a84b-af070a4a1008
   type:
     settings:
       schema: builtin:anomaly-detection.metric-events
       scope: environment
   config:
     template: "metric-event.json"
-    originObjectId: vu9U3hXa3q0AAAABACdidWlsdGluOmFub21hbHktZGV0ZWN0aW9uLm1ldHJpYy1ldmVudHMABnRlbmFudAAGdGVuYW50ACQ2NzMyMWQxMC1mYjZhLTM5N2EtYTgzMi0xNDFlNDVjY2ViOTC-71TeFdrerQ
+    originObjectId: vu9U3hXa3q0AAAABACdidWlsdGluOmFub21hbHktZGV0ZWN0aW9uLm1ldHJpYy1ldmVudHMABnRlbmFudAAGdGVuYW50ACQ1Njg1NmIyMC1jMTVjLTMzMWYtODdiMS05ZmE4OGY0NmUzNzK-71TeFdrerQ
 
 
 
