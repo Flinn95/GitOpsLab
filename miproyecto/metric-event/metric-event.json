@@ -4,18 +4,18 @@
     "eventTemplate": {
         "title": "Uso de memoria optimo de la web app siete rebasado",
         "metadata": [],
-        "eventType": "CUSTOM_ALERT",
+        "eventType": "RESOURCE",
         "davisMerge": false,
         "description": "The {metricname} value was {alert_condition} normal behavior."
     },
     "modelProperties": {
         "type": "STATIC_THRESHOLD",
-        "samples": 5,
-        "threshold": 501201289.7440747,
+        "samples": 3,
+        "threshold": 726413614.8681241,
         "alertOnNoData": false,
         "alertCondition": "ABOVE",
-        "violatingSamples": 3,
-        "dealertingSamples": 5
+        "violatingSamples": 1,
+        "dealertingSamples": 3
     },
     "queryDefinition": {
         "type": "METRIC_KEY",
