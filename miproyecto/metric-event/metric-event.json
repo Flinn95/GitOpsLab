@@ -1,21 +1,21 @@
 {
     "enabled": true,
-    "summary": "UsoDeMemoriaWebAppCinco",
+    "summary": "UsoDeMemoriaWebAppSiete",
     "eventTemplate": {
-        "title": "Uso de memoria optimo de la web app cinco rebasado",
+        "title": "Uso de memoria optimo de la web app siete rebasado",
         "metadata": [],
-        "eventType": "RESOURCE",
+        "eventType": "CUSTOM_ALERT",
         "davisMerge": false,
         "description": "The {metricname} value was {alert_condition} normal behavior."
     },
     "modelProperties": {
         "type": "STATIC_THRESHOLD",
-        "samples": 3,
-        "threshold": 505299880.25726837,
+        "samples": 5,
+        "threshold": 501201289.7440747,
         "alertOnNoData": false,
         "alertCondition": "ABOVE",
-        "violatingSamples": 1,
-        "dealertingSamples": 3
+        "violatingSamples": 3,
+        "dealertingSamples": 5
     },
     "queryDefinition": {
         "type": "METRIC_KEY",
@@ -24,8 +24,8 @@
         "entityFilter": {
             "conditions": [
                 {
-                    "type": "NAME",
-                    "value": "webapp-cinco",
+                    "type": "ENTITY_ID",
+                    "value": "CLOUD_APPLICATION-3AE1B83A123D5481",
                     "operator": "EQUALS"
                 }
             ],
